@@ -36,7 +36,7 @@ def compute_silhouette(df, cluster_count=10, min_cluster = 2):
 
     print(''.join(['Best n_cluster: ', str(n_clus), '. Best silhouette score: ', str(max_sil)]))
     """
-    Return optimal n_cluster, silhouette score and labels.
+    Return optimal n_cluster, silhouette score and labels. The labels is then used to compare against DBSCAN result for score.
     """
     return n_clus, max_sil, labels_true
 
